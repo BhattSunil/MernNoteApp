@@ -16,7 +16,7 @@ Users can interact in real-time, making it ideal for collaborative apps, chat ap
 
 1. **Clone the repository**
  
-git clone https://github.com/BhattSunil/YourRepoName.git
+git clone https://github.com/BhattSunil/MernNoteApp.git
 cd YourRepoName
 
 
