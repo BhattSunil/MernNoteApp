@@ -1,0 +1,214 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #3a64ba;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Main Container */
+.notes-container {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #222;
+}
+
+/* Active users */
+.active-users {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Add Note Section */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.2s ease-in-out;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.note-form button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.note-form button:hover {
+  background: #0056b3;
+}
+
+/* Notes List */
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Single Note */
+.note-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease;
+}
+
+.note-item:hover {
+  transform: translateY(-2px);
+}
+
+.note-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.note-item p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Edit Inputs */
+.note-item input,
+.note-item textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+/* Buttons container */
+.note-item button {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s;
+  margin-right: 8px;
+}
+
+.note-item button:nth-of-type(1) {
+  background: #ffc107;
+  color: #fff;
+}
+
+.note-item button:nth-of-type(1):hover {
+  background: #e0a800;
+}
+
+.note-item button:nth-of-type(2) {
+  background: #dc3545;
+  color: #fff;
+}
+
+.note-item button:nth-of-type(2):hover {
+  background: #b02a37;
+}
+
+/* Save and Cancel in editing */
+.note-item button:nth-of-type(3) {
+  background: #28a745;
+  color: #fff;
+}
+
+.note-item button:nth-of-type(3):hover {
+  background: #218838;
+}
+
+.note-item button:nth-of-type(4) {
+  background: #6c757d;
+  color: #fff;
+}
+
+.note-item button:nth-of-type(4):hover {
+  background: #565e64;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .notes-container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .note-form button {
+    font-size: 14px;
+  }
+
+  .note-item h3 {
+    font-size: 16px;
+  }
+
+  .note-item p {
+    font-size: 14px;
+  }
+}
