@@ -29,9 +29,13 @@ npm install
 
 #Start Backend
 cd backend
+inside the Database folder there is a file named db.js paste your Link of mongodb there.
 node server.js
 
 ##Start Frontend
 cd frontend
 npm run dev
+
+
+
 
