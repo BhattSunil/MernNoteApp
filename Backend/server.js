@@ -51,12 +51,11 @@ io.on("connection", (socket) => {
   });
 });
 
-// Root endpoint
+
 app.get('/', (req, res) => {
   res.send("Welcome to the homepage");
 });
 
-// Attach io instance to app so it can be used in routes (like notes.js)
 app.set('io', io);
 
 const PORT =  3000;
