@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const mongoUrl='mongodb+srv://sunilbhatt:1234@cluster0.zcans64.mongodb.net/notesapp'
+const mongoUrl=''//Enter your Database Link here
 
 const db= mongoose.connect(mongoUrl,{
 useNewUrlParser:true,
