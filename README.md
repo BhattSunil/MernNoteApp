@@ -1,4 +1,4 @@
-# MernNoteApp
+7# MernNoteApp
 
 ## Description
 This is a **MERN (MongoDB, Express.js, React, Node.js) application** with **real-time features using Socket.IO**.  
@@ -30,6 +30,7 @@ npm install
 #Start Backend
 cd backend
 inside the Database folder there is a file named db.js paste your Link of mongodb there.
+Then run command:
 node server.js
 
 ##Start Frontend
